@@ -1,0 +1,6 @@
+override void OnInit() Raises the init event.
+override void OnDeinit() Raises the deinit event.
+override void OnHideBegin() Raises the hide begin event. Wait while all sub components return the callback.
+override void OnHideEnd() Raises the hide end event.
+override void OnShowBegin() Raises the show begin event. Wait while all sub components return the callback.
+override void OnShowEnd() Raises the show end event.

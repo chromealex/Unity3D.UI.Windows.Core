@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70aa2e2b2fb342dcb4fba57a0026436, type: 3}
+  m_Name: Popup
+  m_EditorClassIdentifier: 
+  child: 1
+  items:
+  - title: Popup
+    localDirectory: Forms/Advanced/Popup
+    mainComponent: {fileID: 11409546, guid: ceee67989766d46b39e3e72ccc364825, type: 2}
+    components:
+    - {fileID: 11488866, guid: eb7fe667c013441e4bfd64c852412e1e, type: 2}
+    - {fileID: 11494848, guid: 9959008b987df46258fa3debc5c649b5, type: 2}
+    - {fileID: 11473206, guid: 5451f45ea8b9e4f2d963a8f5498f5123, type: 2}
+    - {fileID: 11409546, guid: ceee67989766d46b39e3e72ccc364825, type: 2}
