@@ -6,6 +6,17 @@ Current Version: 1.0.7a
 Quick start and full doc here:
 https://docs.google.com/document/d/1U1We9b9x6UR5U6ZKktigeX8wxMVvp0fxML-t2B3nIRY
 
+## Default Modules
+
+1. UI.Flow Editor
+Provides `Window/Windows: UI.Flow` menu command.
+
+2. AB Testing
+Adds service into UI.Flow Editor.
+
+3. Localization
+Adds localization service
+
 ## Modules
 
 1. Console:
