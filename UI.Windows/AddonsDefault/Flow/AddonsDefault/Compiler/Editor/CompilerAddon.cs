@@ -4,6 +4,7 @@ using UnityEditor.UI.Windows.Plugins.Flow;
 using UnityEngine.UI.Windows.Plugins.Flow;
 using UnityEngine;
 using FD = UnityEngine.UI.Windows.Plugins.Flow.Data;
+using UnityEngine.UI.Windows.Plugins.FlowCompiler;
 
 namespace UnityEditor.UI.Windows.Plugins.Compiler {
 
@@ -30,10 +31,16 @@ namespace UnityEditor.UI.Windows.Plugins.Compiler {
 			#if WEBPLAYER
 			menu.AddDisabledItem(new GUIContent("Compile UI..."));
 			#else
-			menu.AddItem(new GUIContent(prefix + "Compile UI..."), on: false, func: () => {
+			menu.AddItem(new GUIContent(prefix + "Compile UI Wizard..."), on: false, func: () => {
 				
 				Compiler.ShowEditor(null, null);
 				
+			});
+			menu.AddItem(new GUIContent(prefix + "Compile UI"), on: false, func: () => {
+
+				CompilerSystem.currentNamespace = FlowSystem.GetData().namespaceName;
+				CompilerSystem.Generate(AssetDatabase.GetAssetPath(FlowSystem.GetData()), recompile: true, minimalScriptsSize: false);
+
 			});
 			#endif
 
@@ -48,14 +55,11 @@ namespace UnityEditor.UI.Windows.Plugins.Compiler {
 				var color = GUI.color;
 				
 				GUI.color = Color.red;
-				if (GUILayout.Button("Recompile needed", buttonStyle) == true) {
-					
-					Compiler.ShowEditor(null, () => {
+				if (GUILayout.Button("Recompile", buttonStyle) == true) {
 
-						FlowSystem.SetCompileDirty(state: false);
+					CompilerSystem.currentNamespace = FlowSystem.GetData().namespaceName;
+					CompilerSystem.Generate(AssetDatabase.GetAssetPath(FlowSystem.GetData()), recompile: true, minimalScriptsSize: false);
 
-					});
-					
 				}
 				
 				GUI.color = color;
@@ -104,7 +108,6 @@ namespace UnityEditor.UI.Windows.Plugins.Compiler {
 					FlowSystem.SetDirty();
 					
 				}
-
 				#endregion
 
 			}

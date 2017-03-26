@@ -30,7 +30,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!4 &467108
 Transform:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 130
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -151,53 +151,65 @@ MonoBehaviour:
       onBackAction:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4261636b427574746f6e4265686176696f75722b4f6e4261636b416374696f6e2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+BackButtonBehaviour+OnBackAction,
+          Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     once:
       onInit:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4f6e63652b4f6e496e69742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+Once+OnInit, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
       onDeinit:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4f6e63652b4f6e4465696e69742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+Once+OnDeinit, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     onEveryInstance:
       onShowBegin:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e53686f77426567696e2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnShowBegin, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onShowEnd:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e53686f77456e642c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnShowEnd, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onHideBegin:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e48696465426567696e2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnHideBegin, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onHideEnd:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e48696465456e642c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnHideEnd, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onHideEndLate:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e48696465456e644c6174652c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnHideEndLate, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onWindowOpen:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e57696e646f774f70656e2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnWindowOpen, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onWindowClose:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e57696e646f77436c6f73652c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnWindowClose, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onWindowActive:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e57696e646f774163746976652c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnWindowActive, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       onWindowInactive:
         m_PersistentCalls:
           m_Calls: []
-        m_TypeName: 556e697479456e67696e652e55492e57696e646f77732e4576656e74732b4576657279496e7374616e63652b4f6e57696e646f77496e6163746976652c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+        m_TypeName: UnityEngine.UI.Windows.Events+EveryInstance+OnWindowInactive,
+          Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   transition:
     transition: {fileID: 0}
     transitionParameters: {fileID: 0}

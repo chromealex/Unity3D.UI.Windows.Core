@@ -16,6 +16,7 @@ namespace ME.UAB {
 
 	};
 
+	[System.Serializable]
 	public class UABReference {
 
 		public string instanceId;
@@ -24,12 +25,14 @@ namespace ME.UAB {
 
 	}
 
+	[System.Serializable]
 	public class UABBinary {
 
 		public string instanceId;
 
 	}
 
+	[System.Serializable]
 	public class UABField {
 
 		public string name;
@@ -40,6 +43,7 @@ namespace ME.UAB {
 
 	}
 
+	[System.Serializable]
 	public class UABComponent {
 
 		public int instanceId;
@@ -48,6 +52,7 @@ namespace ME.UAB {
 
 	}
 
+	[System.Serializable]
 	public class UABBinaryData {
 
 		public string instanceId;
@@ -55,6 +60,7 @@ namespace ME.UAB {
 
 	}
 
+	[System.Serializable]
 	public class UABBinaryHeader {
 
 		public string instanceId;
@@ -63,6 +69,7 @@ namespace ME.UAB {
 
 	}
 
+	[System.Serializable]
 	public class UABGameObject {
 
 		public UABComponent[] components;
@@ -75,6 +82,7 @@ namespace ME.UAB {
 
 	}
 
+	[System.Serializable]
 	public class UABPackage {
 
 		public UABGameObject[] objects;

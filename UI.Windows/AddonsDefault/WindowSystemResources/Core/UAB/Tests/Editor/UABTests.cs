@@ -44,6 +44,8 @@ namespace ME.UAB.Tests {
 
 				var serializers = Builder.GetAllSerializers();
 
+				Debug.Log(string.Format("Packing... Objects: {0}", obj.Length));
+
 				// pack
 				var data = ME.UAB.Builder.Pack(obj, null, serializers);
 				var dataSerialized = UABSerializer.SerializeValueType(data);

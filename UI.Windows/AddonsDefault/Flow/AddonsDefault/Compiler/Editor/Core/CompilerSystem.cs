@@ -139,12 +139,12 @@ namespace UnityEngine.UI.Windows.Plugins.FlowCompiler {
 			var filename = Path.GetFileName(pathToData);
 			if (string.IsNullOrEmpty(pathToData) == true) {
 
-				throw new Exception("`pathToData` is wrong: " + pathToData + ". Filename: " + filename);
+				throw new Exception(string.Format("`pathToData` is wrong: {0}. Filename: {1}", pathToData, filename));
 
 			}
 
 			var directory = pathToData.Replace(filename, string.Empty);
-			
+
 			CompilerSystem.currentProject = Path.GetFileNameWithoutExtension(pathToData);
 			CompilerSystem.currentProjectDirectory = directory;
 
@@ -164,7 +164,7 @@ namespace UnityEngine.UI.Windows.Plugins.FlowCompiler {
 					foreach (var each in windows) {
 
 						var relativePath = IO.GetRelativePath(each, "/");
-						CompilerSystem.GenerateWindow(basePath + relativePath + "/", each, recompile, minimalScriptsSize);
+						CompilerSystem.GenerateWindow(string.Format("{0}{1}/", basePath, relativePath), each, recompile, minimalScriptsSize);
 
 					}
 
