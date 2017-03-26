@@ -43,18 +43,21 @@ namespace ME.UAB {
 			this.config = config;
 
 			var result = new UABPackage();
-			result.objects = new UABGameObject[objects.Length];
-			for (int i = 0; i < objects.Length; ++i) {
+			// Pack GameObjects
+			{
+				result.objects = new UABGameObject[objects.Length];
+				for (int i = 0; i < objects.Length; ++i) {
 
-				this.tempReferencesPack.Clear();
+					this.tempReferencesPack.Clear();
 
-				var obj = objects[i];
-				this.currentBundleName = BundleImporter.GetBundleName(obj);
-				var uGo = this.Pack(obj, serializers);
-				result.objects[i] = uGo;
+					var obj = objects[i];
+					this.currentBundleName = BundleImporter.GetBundleName(obj);
+					var uGo = this.Pack(obj, serializers);
+					result.objects[i] = uGo;
 
-				this.BuildReferences(obj.transform);
+					this.BuildReferences(obj.transform);
 
+				}
 			}
 
 			this.BuildBinaries(ref result.binaryHeaders, ref result.binaryData, serializers);

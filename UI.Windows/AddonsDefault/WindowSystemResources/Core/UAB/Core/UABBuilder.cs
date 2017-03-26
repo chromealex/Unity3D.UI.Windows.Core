@@ -75,6 +75,7 @@ namespace ME.UAB {
 			var bundles = UnityEditor.AssetDatabase.GetAllAssetBundleNames();
 			for (int i = 0; i < bundles.Length; ++i) {
 
+				buildingAssets.Clear();
 				var bundle = bundles[i];
 				var assetsPath = UnityEditor.AssetDatabase.GetAssetPathsFromAssetBundle(bundle);
 				for (int j = 0; j < assetsPath.Length; ++j) {

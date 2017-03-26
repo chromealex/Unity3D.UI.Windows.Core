@@ -18,7 +18,7 @@ namespace ME.UAB {
 
 		public static string SerializeValueType(object data) {
 
-			return JsonUtility.ToJson(data);
+			return ME.UAB.Tiny.Json.Encode(data);
 
 		}
 
@@ -40,13 +40,13 @@ namespace ME.UAB {
 
 		public static object DeserializeValueType(string data, System.Type type) {
 
-			return JsonUtility.FromJson(data, type);
+			return ME.UAB.Tiny.Json.Decode(data, type);
 
 		}
 
 		public static T DeserializeValueType<T>(string data) {
 
-			return JsonUtility.FromJson<T>(data);
+			return ME.UAB.Tiny.Json.Decode<T>(data);
 
 		}
 
