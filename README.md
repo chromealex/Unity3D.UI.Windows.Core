@@ -8,6 +8,13 @@ https://docs.google.com/document/d/1U1We9b9x6UR5U6ZKktigeX8wxMVvp0fxML-t2B3nIRY
 
 Example: https://github.com/chromealex/Unity3D.UI.Windows.Example
 
+## Project Support
+$1: <a href="https://www.paypal.com/cgi-bin/webscr?&amp;cmd=_xclick&amp;business=chrome.alex@gmail.com&amp;currency_code=USD&amp;amount=1&amp;item_name=Donate" target="_blank"><img src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></a>
+$5: <a href="https://www.paypal.com/cgi-bin/webscr?&amp;cmd=_xclick&amp;business=chrome.alex@gmail.com&amp;currency_code=USD&amp;amount=5&amp;item_name=Donate" target="_blank"><img src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></a>
+$10: <a href="https://www.paypal.com/cgi-bin/webscr?&amp;cmd=_xclick&amp;business=chrome.alex@gmail.com&amp;currency_code=USD&amp;amount=10&amp;item_name=Donate" target="_blank"><img src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></a>
+$20: <a href="https://www.paypal.com/cgi-bin/webscr?&amp;cmd=_xclick&amp;business=chrome.alex@gmail.com&amp;currency_code=USD&amp;amount=20&amp;item_name=Donate" target="_blank"><img src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></a>
+$50: <a href="https://www.paypal.com/cgi-bin/webscr?&amp;cmd=_xclick&amp;business=chrome.alex@gmail.com&amp;currency_code=USD&amp;amount=50&amp;item_name=Donate" target="_blank"><img src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></a>
+
 ## Default Modules
 
 1. UI.Flow Editor
